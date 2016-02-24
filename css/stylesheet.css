@@ -6675,7 +6675,6 @@ header {
   left: -32px;
 }
 .sticky {
-    background: url("../images/download.svg");
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.8rem;
