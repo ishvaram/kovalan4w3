@@ -8,7 +8,7 @@ var verticalAlign = { "position": "relative", "top": "50%","transform": "" };
 var _button = { "background": "none",
 	"border-width": "1px",
 	"border-style": "solid",
-	"border-color": "currentColor",
+	"border-color": "",
 	"padding": "10px 15px",
 	"text-decoration": "none",
 	"font-size": 12,
@@ -90,7 +90,7 @@ var d = new Descartes({
 			".table-col11": { _mixins: p.tableCol(11) },
 			".table-col12": { _mixins: p.tableCol(12) },
 			"a": {
-				"color": "currentColor"
+				"color": ""
 			},
 			"nav": {
 				"_listeners": [[window, "scroll"], [window, "resize"], [window, 'click'], [window, 'touchstart']],
