@@ -2,9 +2,9 @@
 
 var m = { "margin-left": 0, "margin-right": 0, "margin-top": 0, "margin-bottom": 0, "padding": 0 };
 var heading = { "margin-top": 0, "margin-bottom": 15, "padding": 0, 'font-weight': 300 };
-var max = 900;
-var wrapper = { "max-width": max, "margin": "0 auto" };
-var verticalAlign = { "position": "relative", "top": "50%","transform": "translateY(-50%)" };
+// var max = 800;
+var wrapper = { "max-width": "auto", "margin": "0 auto" };
+var verticalAlign = { "position": "relative", "top": "50%","transform": "" };
 var _button = { "background": "none",
 	"border-width": "1px",
 	"border-style": "solid",
@@ -95,7 +95,7 @@ var d = new Descartes({
 			"nav": {
 				"_listeners": [[window, "scroll"], [window, "resize"], [window, 'click'], [window, 'touchstart']],
 				"text-align": "center",
-				"position": "fixed",
+				"position": "relative",
 				"width": "100%",
 				"overflow": "hidden",
 				"box-sizing": "border-box",
@@ -109,13 +109,13 @@ var d = new Descartes({
 						return 0;
 					}
 					lastScroll = pos;
-					return 50;
+					return 90;
 				},
 				"background": function background(_) {
 					if ($(window).width() < p.mobileBreak) {
 						return "rgba(255,255,255,0.9)";
 					}
-					return p.rgba(255, 255, 255, p.scale($(window).scrollTop(), $(window).height() / 2, $(window).height(), 0, 0.95));
+					//return p.rgba(255, 255, 255, p.scale($(window).scrollTop(), $(window).height() / 2, $(window).height(), 0, 0.95));
 				},
 				"box-shadow": function boxShadow(_) {
 					return "0 0 15px " + p.rgba(100, 100, 100, p.scale($(window).scrollTop(), $(window).height() / 2, $(window).height(), 0, 0.2));
