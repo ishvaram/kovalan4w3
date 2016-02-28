@@ -132,11 +132,7 @@ var d = new Descartes({
 					"text-decoration": "none",
 					"display": "block",
 					"margin": "15px 0",
-					"color": function color(_) {
-						if ($(window).width() < p.mobileBreak) return "#333";
-						var v = p.scale($(window).scrollTop(), $(window).height() / 2, $(window).height(), 255, 50);
-						return p.rgba(v, v, v, 1);
-					}
+					"color":"#fff"
 				}
 			},
 			".button": {

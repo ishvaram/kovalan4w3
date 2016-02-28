@@ -28,6 +28,9 @@
     .top-menu-holder.split {
     	    height: 75px;
     	}
+      .nav{
+            margin-top: 0px !important;
+      }
     </style>
 
   </head>
@@ -84,7 +87,7 @@
                   <li class="active">
                   <a href="#home" address="true">home</a>
                 </li>
-                <li class="active">
+                <li>
                   <a href="#info" address="true">info</a>
                 </li>
                 <li>
@@ -697,11 +700,25 @@
                         </div>
                         
                           <div class="skill-item right">
-                          <div class="skill"  data-text="85%" data-info="Python"   data-percent="85"   data-fill="#272425"></div>
+                          <div class="skill"  data-text="60%" data-info="Python"   data-percent="60"   data-fill="#272425"></div>
+                        </div>
+                      </div>
+
+
+                      <div class="skill-holder timeline-item">
+
+                        <div class="skill-item left">
+                          <div class="skill"  data-text="70%" data-info="Git/ CarrotSearch/ Tesseract/"   data-percent="70"   data-fill="#272425"></div>
                         </div>
 
+                        <div class="event-content timeline-content right">
+                          <p>
+                             Have very good knowledge in Git versioning management and extracting content from OCR docs using tesseract and Carrotsearch foamtree visualization 
+                          </p>
+                        </div>
 
                       </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -732,7 +749,7 @@
 
                     <div class="message-box"></div>
 
-                    <form id="contact-form" class="contact-form " method="post" action="" novalidate="novalidate">
+                    <form id="contact-form" class="contact-form " method="post" action="contact-send.php" novalidate="novalidate">
 
 
 
@@ -743,7 +760,7 @@
                           <div class="controls">
 
 
-                            <input id="cname" data-placeholder="Your Name*" name="g127-name" size="25" class="le-input  required col-xs-12 placeholder">
+                            <input id="ContactName" data-placeholder="Your Name*" name="ContactName" size="25" class="le-input  required col-xs-12 placeholder">
 
                           </div>
                         </div>
@@ -755,7 +772,7 @@
                           <div class="controls">
 
 
-                            <input id="cemail" data-placeholder="Your Email*" name="g127-email" class="le-input  required email col-xs-12 placeholder">
+                            <input id="ContactEmail" data-placeholder="Your Email*" name="ContactEmail" class="le-input  required email col-xs-12 placeholder">
                           </div>
                         </div>
                       </div>
@@ -780,7 +797,7 @@
                           <div class="controls">
 
 
-                            <textarea id="ccomment" class="le-input col-xs-12 no-margin placeholder" name="g127-comment" rows="9" cols="5" data-placeholder="Message"></textarea>
+                            <textarea id="ContactComment" class="le-input col-xs-12 no-margin placeholder" name="ContactComment" rows="9" cols="5" data-placeholder="Message"></textarea>
 
 
                           </div>
