@@ -42,7 +42,25 @@
 
   </head>
 
-  <body style="overflow-x: hidden; overflow-y: auto;" cz-shortcut-listen="true">
+  <body style="overflow-x: hidden; overflow-y: auto;" cz-shortcut-listen="true" onload="startTime()">
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + '<span style="font-size:8px;">'+ s+'</span>';
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
 
     <div id="preloader" style="display: none;">
       <div id="status" style="display: none;">&nbsp;</div>
@@ -85,11 +103,19 @@
                    <li>
                     <a class="fa fa-instagram" style="color:#3f729b !important;" href="https://www.instagram.com/ramkovalan/"></a>
                   </li>
-                </ul>
+                </ul>  
               </div>
-            </div>
-          <div class="shadow"></div></div>
 
+            </div>
+         
+           <div class="shadow">
+
+                <div id="txt" style="margin-top:15%;margin-left:400%;"></div>
+                
+           </div>
+
+           </div>
+ 
           <div class="col-xs-12  nav-menu top-menu-holder">
             <nav class="hidden-xs visible-lg ">
               <ul class="nav">
