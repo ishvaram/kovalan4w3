@@ -113,7 +113,7 @@ var d = new Descartes({
 				},
 				"background": function background(_) {
 					if ($(window).width() < p.mobileBreak) {
-						return "rgba(255,255,255,0.9)";
+						return "rgba(0,0,0,0)";
 					}
 					//return p.rgba(255, 255, 255, p.scale($(window).scrollTop(), $(window).height() / 2, $(window).height(), 0, 0.95));
 				},
