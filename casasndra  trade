@@ -1,2 +1,0 @@
-
-CREATE TABLE forexdata (id uuid,author text,content text,posted_date text,url text,title text,chopeninsterest text,lastweekdata text,presentnegative text,presentpositive text,signals text,symbol text,scraped_date text,source text,primary key (id));
